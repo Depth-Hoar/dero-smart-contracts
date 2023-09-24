@@ -18,7 +18,7 @@ End Function
 
 Function ReleaseToSeller() Uint64
     10 IF SIGNER() != LOAD("owner") THEN GOTO 50
-    20 SEND_DERO_TO_ADDRESS(LOAD("seller"), LOAD("escrowBalance"))
+    20 SEND_DERO_TO_ADDRESS(ADDRESS_RAW(LOAD("seller")), ADDRESS_RAW(LOAD("escrowBalance")))
     30 STORE("escrowBalance", 0)
     40 RETURN 0
     50 RETURN 1
@@ -26,7 +26,7 @@ End Function
 
 Function RefundToBuyer() Uint64
     10 IF SIGNER() != LOAD("owner") THEN GOTO 50
-    20 SEND_DERO_TO_ADDRESS(LOAD("buyer"), LOAD("escrowBalance"))
+    20 SEND_DERO_TO_ADDRESS(ADDRESS_RAW(LOAD("buyer")), ADDRESS_RAW(LOAD("escrowBalance")))
     30 STORE("escrowBalance", 0)
     40 RETURN 0
     50 RETURN 1
