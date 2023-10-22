@@ -32,6 +32,3 @@ Function RefundToBuyer() Uint64
     50 RETURN 1
 End Function
 
-Function CheckBalance() Uint64
-    10 RETURN LOAD("escrowBalance")
-End Function

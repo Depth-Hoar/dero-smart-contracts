@@ -1,10 +1,7 @@
 Function Initialize() Uint64
-// 5 IF EXISTS("owner") THEN GOTO 50
-// 10 STORE("owner", SIGNER())
 20 STORE("participantCount", 0)
 30 STORE("lotteryPool", 0) 
 40 RETURN 0
-50 RETURN 1
 End Function
 
 Function Participate() Uint64
