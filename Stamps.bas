@@ -16,15 +16,15 @@ Function InitializePrivate(collection String, metadataFormat String, metadata St
 End Function
 
 Function DisplayNFT() Uint64
-10   IF ADDRESS_STRING(SIGNER()) == "" THEN GOTO 5
-20   IF ASSETVALUE(SCID()) != 1 THEN GOTO 5
+10   IF ADDRESS_STRING(SIGNER()) == "" THEN GOTO 40
+20   IF ASSETVALUE(SCID()) != 1 THEN GOTO 50
 30   STORE("owner", ADDRESS_STRING(SIGNER()))
 40   RETURN 0
 50   RETURN 1
 End Function
 
 Function RetrieveNFT() Uint64
-10   IF LOAD("owner") != ADDRESS_STRING(SIGNER()) THEN GOTO 5
+10   IF LOAD("owner") != ADDRESS_STRING(SIGNER()) THEN GOTO 50
 20   SEND_ASSET_TO_ADDRESS(SIGNER(), 1, SCID())
 30   STORE("owner", "")
 40   RETURN 0
