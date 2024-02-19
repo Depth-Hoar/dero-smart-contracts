@@ -2,7 +2,7 @@ module escrowDeployment
 
 go 1.20
 
-require github.com/deroproject/derohe v0.0.0-20230604143809-765b2db1f482
+require github.com/deroproject/derohe v0.0.0-20240215152352-a5a0e6a68ada
 
 require (
 	github.com/blang/semver/v4 v4.0.0 // indirect
