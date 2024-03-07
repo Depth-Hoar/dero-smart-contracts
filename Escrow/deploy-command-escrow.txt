@@ -15,12 +15,12 @@ curl -X POST http://127.0.0.1:30000/json_rpc -H 'content-type: application/json'
             {
                 "name": "sellerAddress",
                 "datatype": "S",
-                "value": "dero1qyf3mfflhq7t5pjlckk0g8qw3ktcgvp7sjssknmed0psqw3wmwrzgqqtfwqyc"
+                "value": "deto1qyre7td6x9r88y4cavdgpv6k7lvx6j39lfsx420hpvh3ydpcrtxrxqg8v8e3z"
             },
             {
                 "name": "buyerAddress",
                 "datatype": "S",
-                "value": "dero1qyg3az4c4xl5smz8lc777k25ww44tafsch6aszrcgc8xs9zlgsjfuqgqnp0ye"
+                "value": "deto1qyx7qyvrtrhvaszeej487k2g689fav7h38ay37fja9qf40ycgl0m2qg8ap2y9"
             },
             {
                 "name": "feePercent",
@@ -30,10 +30,16 @@ curl -X POST http://127.0.0.1:30000/json_rpc -H 'content-type: application/json'
             {
                 "name": "blockExpiration",
                 "datatype": "U",
-                "value": 1000000000
+                "value": 10000000000
             }
         ],
-        "sc":"RnVuY3Rpb24gSW5pdGlhbGl6ZShzZWxsZXJBZGRyZXNzIFN0cmluZywgYnV5ZXJBZGRyZXNzIFN0cmluZywgZmVlUGVyY2VudCBVaW50NjQsIGJsb2NrRXhwaXJhdGlvbiBVaW50NjQpIFVpbnQ2NAoxMCBJRiBFWElTVFMoIm93bmVyIikgVEhFTiBHT1RPIDEwMAoyMCBTVE9SRSgib3duZXIiLCBTSUdORVIoKSkKMzAgU1RPUkUoInNlbGxlciIsIHNlbGxlckFkZHJlc3MpCjQwIFNUT1JFKCJidXllciIsIGJ1eWVyQWRkcmVzcykKNTAgU1RPUkUoImZlZVBlcmNlbnQiLCBmZWVQZXJjZW50KQo2MCBTVE9SRSgiYmxvY2tFeHBpcmF0aW9uIiwgYmxvY2tFeHBpcmF0aW9uKQo5OSBSRVRVUk4gMAoxMDAgUkVUVVJOIDEKRW5kIEZ1bmN0aW9uCgpGdW5jdGlvbiBEZXBvc2l0KGFtb3VudCBVaW50NjQpIFVpbnQ2NAoxMCBJRiBTSUdORVIoKSAhPSBMT0FEKCJidXllciIpIFRIRU4gR09UTyAxMDAKMjAgU1RPUkUoImVzY3Jvd0JhbGFuY2UiLCBMT0FEKCJlc2Nyb3dCYWxhbmNlIikgKyBhbW91bnQpCjk5IFJFVFVSTiAwIAoxMDAgUkVUVVJOIDEKRW5kIEZ1bmN0aW9uCgpGdW5jdGlvbiBSZWxlYXNlVG9TZWxsZXIoKSBVaW50NjQKMTAgSUYgU0lHTkVSKCkgIT0gTE9BRCgib3duZXIiKSBUSEVOIEdPVE8gMTAwCjIwIFNFTkRfREVST19UT19BRERSRVNTKEFERFJFU1NfUkFXKExPQUQoInNlbGxlciIpKSwgQUREUkVTU19SQVcoTE9BRCgiZXNjcm93QmFsYW5jZSIpKSkKMzAgU1RPUkUoImVzY3Jvd0JhbGFuY2UiLCAwKQo5OSBSRVRVUk4gMAoxMDAgUkVUVVJOIDEKRW5kIEZ1bmN0aW9uCgpGdW5jdGlvbiBSZWZ1bmRUb0J1eWVyKCkgVWludDY0CjEwIElGIFNJR05FUigpICE9IExPQUQoIm93bmVyIikgVEhFTiBHT1RPIDEwMAoyMCBTRU5EX0RFUk9fVE9fQUREUkVTUyhBRERSRVNTX1JBVyhMT0FEKCJidXllciIpKSwgQUREUkVTU19SQVcoTE9BRCgiZXNjcm93QmFsYW5jZSIpKSkKMzAgU1RPUkUoImVzY3Jvd0JhbGFuY2UiLCAwKQo5OSBSRVRVUk4gMAoxMDAgUkVUVVJOIDEKRW5kIEZ1bmN0aW9uCgo="
+        "sc":"RnVuY3Rpb24gSW5pdGlhbGl6ZShzZWxsZXJBZGRyZXNzIFN0cmluZywgYnV5ZXJBZGRyZXNzIFN0cmluZywgZmVlUGVyY2VudCBVaW50NjQsIGJsb2NrRXhwaXJhdGlvbiBVaW50NjQpIFVpbnQ2NAoxMCBJRiBFWElTVFMoIm93bmVyIikgVEhFTiBHT1RPIDEwMAoyMCBTVE9SRSgib3duZXIiLCBTSUdORVIoKSkKMzAgU1RPUkUoInNlbGxlciIsIEFERFJFU1NfUkFXKHNlbGxlckFkZHJlc3MpKQo0MCBTVE9SRSgiYnV5ZXIiLCBBRERSRVNTX1JBVyhidXllckFkZHJlc3MpKQo1MCBTVE9SRSgiZmVlUGVyY2VudCIsIGZlZVBlcmNlbnQpCjYwIFNUT1JFKCJibG9ja0V4cGlyYXRpb24iLCBibG9ja0V4cGlyYXRpb24pCjcwIFNUT1JFKCJlc2Nyb3dCYWxhbmNlIiwgMCkKOTkgUkVUVVJOIDAKMTAwIFJFVFVSTiAxCkVuZCBGdW5jdGlvbgoKRnVuY3Rpb24gRGVwb3NpdCgpIFVpbnQ2NAoxMCBJRiBTSUdORVIoKSAhPSBMT0FEKCJidXllciIpIFRIRU4gR09UTyAxMDAKMjAgU1RPUkUoImVzY3Jvd0JhbGFuY2UiLCBMT0FEKCJlc2Nyb3dCYWxhbmNlIikgKyBERVJPVkFMVUUoKSkKOTkgUkVUVVJOIDAgCjEwMCBSRVRVUk4gMQpFbmQgRnVuY3Rpb24KCkZ1bmN0aW9uIFJlbGVhc2VUb1NlbGxlcigpIFVpbnQ2NAoxMCBJRiBTSUdORVIoKSAhPSBMT0FEKCJvd25lciIpIFRIRU4gR09UTyAxMDAKMjAgU0VORF9ERVJPX1RPX0FERFJFU1MoTE9BRCgic2VsbGVyIiksIExPQUQoImVzY3Jvd0JhbGFuY2UiKSkKMzAgU1RPUkUoImVzY3Jvd0JhbGFuY2UiLCAwKQo5OSBSRVRVUk4gMAoxMDAgUkVUVVJOIDEKRW5kIEZ1bmN0aW9uCgpGdW5jdGlvbiBSZWZ1bmRUb0J1eWVyKCkgVWludDY0CjEwIElGIFNJR05FUigpICE9IExPQUQoIm93bmVyIikgVEhFTiBHT1RPIDEwMAoyMCBTRU5EX0RFUk9fVE9fQUREUkVTUyhMT0FEKCJidXllciIpLCBMT0FEKCJlc2Nyb3dCYWxhbmNlIikpCjMwIFNUT1JFKCJlc2Nyb3dCYWxhbmNlIiwgMCkKOTkgUkVUVVJOIDAKMTAwIFJFVFVSTiAxCkVuZCBGdW5jdGlvbg=="
     }
 }'
 
+
+curl -X POST http://127.0.0.1:30000/json_rpc -H 'content-type: application/json' -d '{
+    "jsonrpc": "2.0",
+    "id": "1",
+    "method": "GetAddress"
+}'
